@@ -10,8 +10,11 @@ export default function mockMaxDataGenerator(callback) {
         callback(data);
     };
 
+    const INTERVAL = 10000
+
+
     // Simulate data updates every second
-    const intervalId = setInterval(generateData, 5000);
+    const intervalId = setInterval(generateData, INTERVAL);
 
     // Return a cleanup function to stop the interval
     return () => clearInterval(intervalId);

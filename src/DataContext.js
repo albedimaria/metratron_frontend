@@ -20,7 +20,7 @@ export const MaxDataProvider = ({ children }) => {
 
         if (USE_MOCK_DATA) {
             // Use the mock data generator
-            console.log("Using mock data...");
+            // console.log("Using mock data...");
             cleanup = mockMaxDataGenerator((receivedData) => {
                 console.log("Mock data received:", receivedData);
                 setMaxData(receivedData);

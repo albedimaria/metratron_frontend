@@ -3,7 +3,7 @@ import {useKnobsValues} from "./KnobValuesContext";
 
 const MockDataDisplay = () => {
     const { knobValues, setKnobValues } = useKnobsValues();
-    console.log(knobValues);
+    // console.log(knobValues);
 
     if (!knobValues || Object.keys(knobValues).length === 0) {
         return <p>Waiting for data...</p>;
@@ -17,8 +17,9 @@ const MockDataDisplay = () => {
         }));
     };
 
-    return (
-        <div>
+    return
+
+     /*   <div>
             <h1>Real-Time Knob Values</h1>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "10px" }}>
                 {Object.entries(knobValues).map(([key, value]) => (
@@ -35,8 +36,8 @@ const MockDataDisplay = () => {
                     </div>
                 ))}
             </div>
-        </div>
-    );
+        </div>*/
+
 };
 
 export default MockDataDisplay;
