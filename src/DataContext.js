@@ -1,7 +1,7 @@
 import { createContext, useEffect, useMemo, useState } from "react";
 import React from "react";
 import { io } from "socket.io-client";
-import mockMaxDataGenerator from "./mockMaxDataGenerator";
+import mockMaxDataGenerator from "./MockMaxDataGenerator";
 
 // Toggle between mock data and real data
 const USE_MOCK_DATA = true;
